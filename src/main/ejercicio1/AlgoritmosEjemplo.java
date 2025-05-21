@@ -8,7 +8,7 @@ public class AlgoritmosEjemplo {
             System.out.print(n + " ");
         }
     }
-
+//-----------------------------------------------------------------------------
     // 2. Búsqueda lineal
     public static int busquedaLineal(int[] arr, int clave) {
         for (int i = 0; i < arr.length; i++) {
@@ -17,7 +17,7 @@ public class AlgoritmosEjemplo {
         }
         return -1;
     }
-
+//-----------------------------------------------------------------------------
     // 3. Búsqueda binaria (arreglo ordenado)
     public static int busquedaBinaria(int[] arr, int clave) {
         int izquierda = 0, derecha = arr.length - 1;
@@ -32,21 +32,21 @@ public class AlgoritmosEjemplo {
         }
         return -1;
     }
-
+//-----------------------------------------------------------------------------
     // 4. Factorial recursivo
     public static int factorial(int n) {
         if (n == 0)
             return 1;
         return n * factorial(n - 1);
     }
-
+//-----------------------------------------------------------------------------
     // 5. Fibonacci recursivo
     public static int fibonacci(int n) {
         if (n <= 1)
             return n;
         return fibonacci(n - 1) + fibonacci(n - 2);
     }
-
+//-----------------------------------------------------------------------------
     // 6. Bubble Sort
     public static void bubbleSort(int[] arr) {
         int n = arr.length;
@@ -60,7 +60,7 @@ public class AlgoritmosEjemplo {
             }
         }
     }
-
+//-----------------------------------------------------------------------------
     // 7. Quick Sort
     public static void quickSort(int[] arr, int low, int high) {
         if (low < high) {
@@ -69,7 +69,7 @@ public class AlgoritmosEjemplo {
             quickSort(arr, pi + 1, high);
         }
     }
-
+//-----------------------------------------------------------------------------
     private static int partition(int[] arr, int low, int high) {
         int pivot = arr[high];
         int i = (low - 1);
@@ -86,7 +86,7 @@ public class AlgoritmosEjemplo {
         arr[high] = temp;
         return i + 1;
     }
-
+//-----------------------------------------------------------------------------
     // 8. Suma de matriz (matriz cuadrada n x n)
     public static int sumaMatriz(int[][] matriz) {
         int suma = 0;
@@ -97,7 +97,7 @@ public class AlgoritmosEjemplo {
         }
         return suma;
     }
-
+//-----------------------------------------------------------------------------
     // 9. Encontrar el máximo en un arreglo
     public static int encontrarMaximo(int[] arr) {
         int max = arr[0];
@@ -107,7 +107,7 @@ public class AlgoritmosEjemplo {
         }
         return max;
     }
-
+//-----------------------------------------------------------------------------
     // 10. Potencia recursiva
     public static int potencia(int base, int exponente) {
         if (exponente == 0)
@@ -115,3 +115,4 @@ public class AlgoritmosEjemplo {
         return base * potencia(base, exponente - 1);
     }
 }
+//-----------------------------------------------------------------------------
